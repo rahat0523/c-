@@ -7,5 +7,24 @@ int main()
    ios_base::sync_with_stdio (0);
    cin.tie (0);
    cout.tie (0);
-   vector<int>v[n];
+   int N;
+   cin>>N;
+   vector<int>v[N];
+   for(int i=0;i<N;i++)
+   {
+    ll n;
+    cin>>n;
+    for(int j=0;j<n;j++)
+    {
+        int x;
+        cin>>x;
+        v[i].push_back(x);
+    }
+   }
+   for(auto i:v)
+   {
+    for(auto j:i)
+    cout<<j<<" ";
+    cout<<endl;
+   }
 }

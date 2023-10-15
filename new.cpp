@@ -7,10 +7,24 @@ int main()
    ios_base::sync_with_stdio (0);
    cin.tie (0);
    cout.tie (0);
-   string s;
-   cin>>s;
-   rotate(s.begin(),s.begin()+2,s.begin()+3);
-   cout<<s<<endl;
-   char c=*min_element(s.begin(),s.end());
-   cout<<c<<endl;
+   int N;
+   cin>>N;
+   vector<int>v[N];
+   for(int i=0;i<N;i++)
+   {
+    //ll n;
+    //cin>>n;
+    for(int j=0;j<N;j++)
+    {
+        int x;
+        cin>>x;
+        v[i].push_back(x);
+    }
+   }
+   for(auto i:v)
+   {
+    for(auto j:i)
+    cout<<j<<" ";
+    cout<<endl;
+   }
 }
