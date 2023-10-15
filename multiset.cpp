@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-    multiset<int>s;
+    multiset<int>s;   //multiset can print and store the duplicate values
+
     s.insert(1);
     s.insert(2);
     s.insert(2);
